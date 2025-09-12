@@ -1,0 +1,32 @@
+# .gitlab-ci.yml
+
+image: docker:latest
+
+services:
+  - docker:dind
+
+variables:
+  IMAGE_NAME: portfolio
+  IMAGE_TAG: v2
+  DOCKER_REPO: gagpoargaafagrg
+  DOCKER_USER: gagpoargaafagrg
+  DOCKER_PSWD: p3rf3ctr66tDocker
+
+stages:
+  - build
+  - test
+  - deploy
+
+before_script:
+  - echo "Authenticating with Docker Hub..."
+  - echo "$DOCKER_PSWD" | docker login -u "$DOCKER_USER" --password-stdin
+
+build:
+  stage: build
+  script:
+    - echo "Building Docker image..."
+    - docker build -t $DOCKER_REPO/$IMAGE_NAME:$IMAGE_TAG .
+    - echo "Pushing Docker image..."
+    - docker push $DOCKER_REPO/$IMAGE_NAME:$IMAGE_TAG
+    - echo "Docker image pushed successfully to Docker Hub"
+

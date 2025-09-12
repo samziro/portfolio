@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sides{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.btnPad

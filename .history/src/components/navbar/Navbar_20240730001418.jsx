@@ -1,0 +1,19 @@
+
+const Navbar = () => {
+  return (
+    <nav className="sides text-stone-600 fixed w-full py-2 flex items-center justify-between shadow-sm bg-slate-50 font-medium">
+      <h1 className="text-4xl">S.</h1>
+      <div className="links flex items-center gap-8 list-none">
+        <li className="cursor-pointer">Home</li>
+        <li className="cursor-pointer">About me</li>
+        <li className="cursor-pointer">Services</li>
+        <li className="cursor-pointer">Projects</li>
+      </div>
+      <button className="ring-1 ring-neutral-400 btnPadding rounded-full">
+        Contact me
+      </button>
+    </nav>
+  );
+}
+
+export default Navbar

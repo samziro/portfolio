@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Outfit", sans-serif;
+}
+
+.sides{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.btnPadding{
+  padding: .5% 1.5%;
+}
+
+dark{
+  ba
+}
