@@ -15,11 +15,11 @@ import greatstack_cert from './greatstack_cert.png'
 export const projects = [
   {
     id: 1,
-    title: "Doctor Booking System",
+    title: "Tapps Broliers Enterprise",
     category: "Development",
-    image: "/web.png",
-    description: "A full-stack app for booking appointments using MERN + Docker + GitLab CI/CD.",
-    link: "https://gitlab.com/react_projects2363813/project44",
+    image: "/tapps.png",
+    description: "A full working website for selling broilers",
+    link: "https://tapps-kappa.vercel.app/",
   },
   {
     id: 2,
