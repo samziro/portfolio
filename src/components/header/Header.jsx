@@ -70,7 +70,7 @@ const Header = () => {
         </Link>
 
         <a
-          href="https://drive.google.com/drive/u/0/folders/1jXyN5uolJbWpYX-mo8-2gr41CShgmZko"
+          href="https://drive.google.com/file/d/1LiGHiF8y27ZXXjdfK_gT07mlE-9MQ7sD/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-2 border border-stone-600 rounded-full bg-slate-50 flex items-center gap-2 hover:bg-stone-700 hover:text-white transition duration-500"
