@@ -2,15 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml+png" href="/src/assets/port-removebg.png" />
+    <link rel="icon" type="image/png" href="/src/assets/port-removebg.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Portfolio</title>
+
+    <!-- Primary SEO -->
+    <title>Samuel Ziro | Graphic Designer, Web Developer & Social Media Manager</title>
+    <meta 
+      name="description" 
+      content="Samuel Ziro is a professional graphic designer, web developer, and social media manager based in Watamu, Kenya. Offering creative design, branding, and full-stack web development services for clients globally." 
+    />
+    <meta 
+      name="keywords" 
+      content="Graphic Designer in Watamu, Best Web Developer Watamu, Best Graphic Designer Watamu,Web Developer Watamu, Social Media Manager Watamu, Social Media Marketer Watamu, Web Developer, Social Media Manager, Branding, Branding Watamu, React Developer, Freelance Designer, Global Creative Services" 
+    />
+    <meta name="author" content="Samuel Ziro" />
+    <link rel="canonical" href="https://samuel-ziro.vercel.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://samuel-ziro.vercel.app/" />
+    <meta property="og:title" content="Samuel Ziro | Graphic Designer, Web Developer & Social Media Manager" />
+    <meta 
+      property="og:description" 
+      content="Creative portfolio of Samuel Ziro, a graphic designer, web developer, and social media manager helping brands grow in Kenya and globally." 
+    />
+    <meta property="og:image" content="https://samuel-ziro.vercel.app/me.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://samuel-ziro.vercel.app/" />
+    <meta name="twitter:title" content="Samuel Ziro | Graphic Designer, Web Developer & Social Media Manager" />
+    <meta 
+      name="twitter:description" 
+      content="Explore the creative portfolio of Samuel Ziro: graphic design, web development, branding, and social media management." 
+    />
+    <meta name="twitter:image" content="https://samuel-ziro.vercel.app/me.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" 
+      rel="stylesheet" 
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Structured Data (JSON-LD for Portfolio/Person) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Samuel Ziro",
+      "jobTitle": "Graphic Designer, Web Developer & Social Media Manager",
+      "url": "https://samuel-ziro.vercel.app/",
+      "image": "https://samuel-ziro.vercel.app/preview.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Watamu",
+        "addressRegion": "Kilifi",
+        "addressCountry": "Kenya"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/samuel-ziro-b49b6127b/",
+        "https://twitter.com/",
+        "https://www.instagram.com/"
+      ]
+    }
+    </script>
   </head>
-  <body>
+
+  <body class="font-outfit">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
